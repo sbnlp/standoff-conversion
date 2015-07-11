@@ -11,7 +11,7 @@ Detailed conversion scheme at : http://sbnlp.github.io/standoff-conversion/
 Copyright [2015] [Michael Spranger, Sucheendra K. Palaniappan, Samik Ghosh]
 
 Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
+you may not use this software except in compliance with the License.
 
 Unless required by applicable law or agreed to in writing, software
 distributed under the License is distributed on an "AS IS" BASIS,
