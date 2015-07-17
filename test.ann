@@ -1,0 +1,93 @@
+T11	Dna 0 0	Template
+T12	Protein 0 0	Product
+T13	Gene_expression 0 0	expression
+E14	Gene_expression:T13 Theme:T11 Theme:T12
+
+T21	Protein 0 0	Theme
+T22	Protein 0 0	Cause
+T23	Regulation 0 0	regulates
+E24	Regulation:T23 Theme:T21 Cause:T22 
+
+T31	Catalysis 0 0	catalyses
+E32	Catalysis:T31
+T33	Protein 0 0	Theme
+T34	Regulation 0 0	regulates
+E35	Regulation:T34 Cause:E32 Theme:T33
+
+T41	Catalysis 0 0	catalyses
+E42	Catalysis:T41
+T43	Protein 0 0	Cause
+T44	Regulation 0 0	regulates
+E45	Regulation:T44 Cause:T43 Theme:E42
+
+T51	Protein 0 0	Theme
+T52	Protein 0 0	Theme
+T53	Protein 0 0	Product
+T54	Binding 0 0	association
+E55	Binding:T54 Theme:T51 Theme:T52 Product:T53
+
+T61	Protein 0 0	Participant
+T62	Protein 0 0	Participant
+T63	Protein 0 0	Complex
+T64	Dissociation 0 0	disrupting
+E65	Dissociation:T64 Participant:T61 Participant:T62 Complex:T63
+
+T71	Protein 0 0	Theme
+T72	Degradation 0 0	degrades
+E73	Degradation:T72 Theme:T21
+
+T81	Protein 0 0	Theme
+T82	Entity 0 0	AtLoc
+T83	Localization 8 14	localize
+E84	Localization:T83 Theme:T81 AtLoc:T82
+
+T91	Protein 0 0	Theme
+T92	Entity 0 0	FromLoc
+T93	Entity 0 0	ToLoc
+T94	Localization 8 14	localize
+E95	Localization:T94 Theme:T91 FromLoc:T92 ToLoc:T93
+
+T111	Protein 0 0	Theme
+T112	Protein 0 0	Cause
+T113	Entity 0 0	Site
+T114	Phosphorylation 0 0	phosphorylate
+E115	Phosphorylation:T114 Theme:T111 Cause:T112 Site:T113
+T121	Protein 0 0	Theme
+T122	Protein 0 0	Cause
+T123	Entity 0 0	Site
+T124	Dephosphorylation 0 0	dephosphorylation
+E125	Dephosphorylation:T124 Theme:T121 Cause:T122 Site:T123
+
+T131	Protein 0 0	Theme
+T132	Protein 0 0	Cause
+T133	Entity 0 0	Site
+T134	Methylation 0 0	methylate
+E135	Methylation:T134 Theme:T131 Cause:T132 Site:T133
+T141	Protein 0 0	Theme
+T142	Protein 0 0	Cause
+T143	Entity 0 0	Site
+T144	Demethylation 0 0	demethylate
+E145	Demethylation:T144 Theme:T141 Cause:T142 Site:T143
+
+T151	Protein 0 0	Theme
+T152	Protein 0 0	Cause
+T153	Entity 0 0	Site
+T154	Ubiquitination 0 0	methylate
+E155	Ubiquitination:T154 Theme:T151 Cause:T152 Site:T153
+T161	Protein 0 0	Theme
+T162	Protein 0 0	Cause
+T163	Entity 0 0	Site
+T164	Deubiquitination 0 0	demethylate
+E165	Deubiquitination:T164 Theme:T161 Cause:T162 Site:T163
+
+T171	Protein 0 0	Theme
+T172	Protein 0 0	Cause
+T173	Entity 0 0	Site
+T174	Acetylation 0 0	methylate
+E175	Acetylation:T174 Theme:T171 Cause:T172 Site:T173
+T181	Protein 0 0	Theme
+T182	Protein 0 0	Cause
+T183	Entity 0 0	Site
+T184	Deacetylation 0 0	demethylate
+E185	Deacetylation:T184 Theme:T181 Cause:T182 Site:T183
+

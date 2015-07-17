@@ -1,0 +1,11 @@
+T1	Protein 0 7	Theme
+T2	Catabolism 7 28	catabolize
+E1	Catabolism:T2 Theme:T1
+
+T3	Protein 0 7	Theme
+T4	Degradation 7 28	degrade
+E2	Degradation:T4 Theme:T3
+
+T5	Protein 0 7	Theme
+T6	Protein_catabolism 7 28	catabolize
+E3	Protein_catabolism:T6 Theme:T5

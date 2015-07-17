@@ -1,0 +1,9 @@
+T1	Protein 0 0	Protein Theme
+T2	DNA 0 0	DNA Cause
+T3	Transcription 0 0	transcribe
+E1	Transcription:T3 Theme:T1 Theme:T2
+
+T4	RNA 0 0	RNA Theme
+T5	DNA 0 0	DNA Cause
+T6	Transcription 0 0	transcribe
+E2	Transcription:T6 Theme:T4 Theme:T5

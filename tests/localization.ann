@@ -1,0 +1,10 @@
+T1	Protein 0 0	Theme
+T2	Entity 0 0	AtLoc
+T3	Localization 0 0	localize
+E1	Localization:T3 Theme:T1 AtLoc:T2
+
+T4	Protein 0 0	Theme
+T5	Entity 0 0	FromLoc
+T6	Entity 0 0	ToLoc
+T7	Localization 0 0	localize
+E2	Localization:T7 Theme:T4 FromLoc:T5 ToLoc:T6

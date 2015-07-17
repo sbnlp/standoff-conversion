@@ -1,0 +1,3 @@
+T1	Protein 0 7	Participant
+T2	Pathway 7 28	pathway
+E1	Pathway:T2 Participant:T1

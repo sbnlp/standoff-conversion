@@ -1,0 +1,9 @@
+T1	Protein 0 0	Protein Theme
+T2	RNA 0 0	RNA Cause
+T3	Translation 0 0	translate
+E1	Translation:T3 Theme:T1 Theme:T2
+
+T4	Protein 0 0	Protein Theme
+T5	DNA 0 0	DNA Cause
+T6	Translation 0 0	translate
+E2	Translation:T6 Theme:T4 Theme:T5

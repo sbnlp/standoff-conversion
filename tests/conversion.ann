@@ -1,0 +1,4 @@
+T1	Protein 0 7	Theme
+T2	Protein 0 7	Product
+T3	Conversion 7 28	convert
+E1	Conversion:T3 Theme:T1 Product:T2

@@ -1,0 +1,5 @@
+T1	Protein 0 0	Theme1
+T2	Protein 0 0	Product1
+T3	Protein 0 0	Product2
+T4	Dissociation 934 945	dissociate
+E1	Dissociation:T4 Theme:T1 Product:T2 Product:T3

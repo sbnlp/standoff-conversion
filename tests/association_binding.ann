@@ -1,0 +1,10 @@
+T1	Protein 0 0	Theme1
+T2	Protein 0 0	Theme2
+T3	Protein 0 0	Product
+T4	Association 934 945	association
+E1	Association:T4 Theme:T1 Theme:T2 Product:T3
+T5	Protein 0 0	Theme1
+T6	Protein 0 0	Theme2
+T7	Protein 0 0	Product
+T8	Binding 934 945	binds
+E2	Binding:T8 Theme:T5 Theme:T6 Product:T7

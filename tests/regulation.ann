@@ -1,0 +1,29 @@
+T1	Protein 0 7	Theme
+T2	Protein 0 7	Cause
+T3	Regulation 7 28	regulates
+E1	Regulation:T3 Theme:T1 Cause:T2
+
+T4	Protein 0 7	Theme
+T5	Protein 0 7	Cause Event Theme
+T6	Phosphorylation 0 7	Cause event
+E2	Phosphorylation:T6 Theme:T5
+T7	Regulation 7 28	regulates
+E3	Regulation:T7 Theme:T4 Cause:E2
+
+T8	Protein 0 7	Cause Theme
+T9	Protein 0 7	Theme event theme
+T10	Phosphorylation 0 7	Theme event
+E4	Phosphorylation:T10 Theme:T9
+T11	Regulation 7 28	regulates
+E5	Regulation:T11 Theme:E4 Cause:T8
+
+T12	Protein 0 7	Theme event theme
+T13	Phosphorylation 0 7	Theme event
+E6	Phosphorylation:T13 Theme:T12
+
+T14	Protein 0 7	Cause event theme
+T15	Phosphorylation 0 7	Cause event
+E7	Phosphorylation:T15 Theme:T14
+
+T16	Regulation 7 28	regulates
+E8	Regulation:T16 Theme:E6 Cause:E7

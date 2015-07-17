@@ -1,0 +1,15 @@
+T1	Protein 0 7	Theme
+T2	Entity 0 7	FromLoc
+T3	Transport 7 28	transported
+E1	Transport:T3 FromLoc:T2 Theme:T1
+
+T4	Protein 0 7	Theme
+T5	Entity 0 7	ToLoc
+T6	Transport 7 28	transported
+E2	Transport:T6 ToLoc:T5 Theme:T4
+
+T7	Protein 0 7	Theme
+T8	Entity 0 7	FromLoc
+T9	Entity 0 7	ToLoc
+T10	Transport 7 28	transported
+E3	Transport:T10 Theme:T7 FromLoc:T8 ToLoc:T9

@@ -55,3 +55,9 @@ docs/_build/
 
 # PyBuilder
 target/
+
+*.owl
+*.pdf
+*.xml
+*.svg
+.DS_Store

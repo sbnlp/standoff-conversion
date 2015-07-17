@@ -1,0 +1,5 @@
+T1	Protein 0 7	Theme
+T2	Protein 0 7	Cause
+T3	Entity 0 7	Site
+T4	Acetylation 7 28	acetylates
+E1	Acetylation:T4 Theme:T1 Cause:T2 Site:T3
