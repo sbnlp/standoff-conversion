@@ -3,7 +3,10 @@ Python scripts for converting NLP standoff files to SBML and BioPAX
 Detailed conversion scheme at : http://sbnlp.github.io/standoff-conversion/
 
 #Prerequisites
-
+1) paxtools-4.2.1.jar; 
+Available for download from http://sourceforge.net/projects/biopax/files/paxtools/
+2) Java to python integrator (JPype); See https://pypi.python.org/pypi/JPype1
+3) libSBML with python bindings; See http://sbml.org/Software/libSBML/docs/python-api/
 
 
 
