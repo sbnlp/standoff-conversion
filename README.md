@@ -1,7 +1,8 @@
-# standoff-conversion
+# Standoff-conversion
 Python scripts for converting NLP standoff files to SBML and BioPAX
-
 Detailed conversion scheme at : http://sbnlp.github.io/standoff-conversion/
+
+#Prerequisites
 
 
 
