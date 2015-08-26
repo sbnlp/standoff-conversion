@@ -3,7 +3,9 @@ Python scripts for converting NLP standoff files to SBML and BioPAX.
 
 Detailed conversion scheme at : http://sbnlp.github.io/standoff-conversion/
 
-Read the complete paper here 
+Read the complete paper here:
+
+
 [Extracting Biological Pathway Models From NLP Event Representations](http://aclweb.org/anthology/W/W15/W15-3805.pdf) - Proceedings of the ACL 2015 Workshop on Biomedical Natural Language Processing (BioNLP’15)
 
 #Prerequisites
