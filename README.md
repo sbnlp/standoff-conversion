@@ -18,7 +18,9 @@ Available for download from http://sourceforge.net/projects/biopax/files/paxtool
 
 #Usage
 To  understand the different options available for the conversion from standoff to BioPAX/SBML
+
 ``` python st2sbml.py --help ```
+
 ```python st2biopax.py --help ```
 
 
