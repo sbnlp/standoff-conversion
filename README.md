@@ -16,6 +16,12 @@ Available for download from http://sourceforge.net/projects/biopax/files/paxtool
 
 * libSBML with python bindings; See http://sbml.org/Software/libSBML/docs/python-api/
 
+#Usage
+To  understand the different options available for the conversion from standoff to BioPAX/SBML
+``` python st2sbml.py --help ```
+```python st2biopax.py --help ```
+
+
 # Copyright
 
 Copyright [2015] [Michael Spranger, Sucheendra K. Palaniappan, Samik Ghosh]
