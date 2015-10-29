@@ -1,17 +1,9 @@
 # Script for mapping standoff formats to biopax (see ... for more details)
-# It combines information from
-#  [1] T. Ohta, S. Pyysalo, J. Tsujii. From Pathways to Biomolecular Events: Opportunities and Challenges In Proceedings of the 2011 Workshop on Biomedical Natural Language Processing, ACL-HLT 2011, pages 105-113, Portland, Oregon, USA, June 23-24, 2011.
-#      http://www.aclweb.org/anthology/W11-0214.pdf
-#  [2] Pathway Curation (PC) task/BioNLP-ST 2013 http://2013.bionlp-st.org/tasks/pathway-curation
-#  [3] BioPax level 3 documentation http://www.biopax.org/release/biopax-level3-documentation.pdf
-#  [4] CellDesigner BioPax conversion tool
+# For more information see Michael Spranger, Sucheendra K Palaniappan and Samik Gosh. Extracting Biological Pathway Models From NLP Event Representations. In Proceedings of the 2015 Workshop on Biomedical Natural Language Processing (BioNLP 2015), pages 42-51, 2015. Association for Computational Linguistics.
+# http://ijcai.org/papers15/Papers/IJCAI15-271.pdf
 
 # to run all tests
 # ls tests/*.ann | xargs -I {} python2.7 st2biopax.py --file {}  --output {}.output-biopax.owl --complete-interactions
-
-# TODO
-# single physical entities are not allowed
-# set spontaneous
 
 import argparse
 import copy

@@ -1,8 +1,6 @@
-# Transforms a standoff file into SBML
-# For more information see (...)
-# Based on information in
-# [1] Buechel, F., Wrzodek, C., Mittag, F., Draeger, A., Eichner, J., Rodriguez, N., Le Novere, N., and Zell, A. (2012). Qualitative translation of relations from biopax to sbml qual. Bioinformatics, 28(20):2648?2653.
-# [2] Pyysalo, S., Ohta, T. and Ananiadou, S. (2012) Pathway Curation (PC) task at BioNLP Shared Task 2013 Task Proposal
+# Transforms an NLP standoff file into SBML
+# For more information see Michael Spranger, Sucheendra K Palaniappan and Samik Gosh. Extracting Biological Pathway Models From NLP Event Representations. In Proceedings of the 2015 Workshop on Biomedical Natural Language Processing (BioNLP 2015), pages 42-51, 2015. Association for Computational Linguistics.
+# http://ijcai.org/papers15/Papers/IJCAI15-271.pdf
 
 # to run all tests
 # ls tests/*.ann | xargs -I {} python2.7 st2sbml.py --file {}  --output {}.output-sbml.xml --complete-reactions
@@ -35,19 +33,14 @@ STANDOFF_ENTITY_TO_SBO_MAPPING = {
     "drug" : "SBO:0000247" # simple chemical
 }
 
-# mapping of reaction types to sbo term 
-# for reactions to whom we do not know the SBO term
-# use the generic reaction SBO:0000176
-BIOCHEMICAL_REACTION ="SBO:0000176"
-
 STANDOFF_EVENT_TO_SBO_MAPPING = {
     "acetylation"  :   "SBO:0000215",
-    "activation"   :   BIOCHEMICAL_REACTION,
+    "activation"   :   "SBO:0000170",
     "association"  :   "SBO:0000297",
     "binding"  :   "SBO:0000297",
     "catabolism"   :   "GO:0009056",
     "catalysis"    :   "SBO:0000172",
-    "conversion"   :   BIOCHEMICAL_REACTION,
+    "conversion"   :   "SBO:0000182",
     "deacetylation"    :   "GO:0006476",
     "degradation"  :   "SBO:0000179",
     "demethylation"    :   "GO:0006482",
@@ -55,10 +48,10 @@ STANDOFF_EVENT_TO_SBO_MAPPING = {
     "deubiquitination" :   "GO:0016579",
     "dissociation" :   "SBO:0000180",
     "gene_expression" : "GO:0010467",
-    "inactivation" :   BIOCHEMICAL_REACTION,
+    "inactivation" :   "SBO:0000169",
     "localization" :   "GO:0051179",
     "methylation"  :   "SBO:0000214",
-    "negative_regulation"  :   "SBO:0000169",
+    "negative_regulation"  :  "SBO:0000169",
     "pathway"  :   "SBO:0000375", 
     "phosphorylation"  :   "SBO:0000216",
     "positive_regulation"  :   "SBO:0000170",
@@ -195,17 +188,17 @@ def check( value, message, arguments = DEFAULT_ARGUMENTS):
         if value == libsbml.LIBSBML_OPERATION_SUCCESS:
             return
         else:
-            err_msg = 'Error processing {0} tying to {1} libSBML returned error code {2} : "{3}"'.format( get_path( arguments), message, value, libsbml.OperationReturnValue_toString(value).strip())
+            err_msg = 'Error processing {0} trying to {1} libSBML returned error code {2} : "{3}"'.format( get_path( arguments), message, value, libsbml.OperationReturnValue_toString(value).strip())
             raise SystemExit(err_msg)
     else:
         return
 
 def add_cvterm( term, arguments = DEFAULT_ARGUMENTS):
     "Adds a controlled vocabulary term"
-    controlledVocab = libsbml.CVTerm(libsbml.BIOLOGICAL_QUALIFIER);
-    check( controlledVocab.setBiologicalQualifierType(libsbml.BQB_IS), "addSBO term-pt1", arguments = arguments);
-    check( controlledVocab.addResource(term),"addSBO term-pt2", arguments = arguments);
-    return controlledVocab
+    controlled_vocab = libsbml.CVTerm(libsbml.BIOLOGICAL_QUALIFIER);
+    check( controlled_vocab.setBiologicalQualifierType(libsbml.BQB_IS), "addSBO term-pt1", arguments = arguments);
+    check( controlled_vocab.addResource(term),"addSBO term-pt2", arguments = arguments);
+    return controlled_vocab
 
 def add_note( note, species, arguments = DEFAULT_ARGUMENTS):
     """ Adds a note to species (wraps the note in <p></p> and escapes the text) """
