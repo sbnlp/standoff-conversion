@@ -109,7 +109,7 @@ def parse_arguments( args = None):
     parser.add_argument( '--use-ann',
                         action="store_true",
                         dest = "use_ann",
-                        default = True,
+                        default = False,
                         help="whether to use ann or a1/a2")
     
     parser.add_argument( '--output',
