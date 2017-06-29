@@ -26,7 +26,7 @@ To  understand the different options available for the conversion from standoff 
 
 # Copyright
 
-Copyright [2015] [Michael Spranger, Sucheendra K. Palaniappan, Samik Ghosh]
+Copyright [2015-2017] [Michael Spranger, Sucheendra K. Palaniappan, Samik Ghosh]
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this software except in compliance with the License.
