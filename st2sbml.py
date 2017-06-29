@@ -1,7 +1,5 @@
 # Transforms an NLP standoff file into SBML
 # For more information see Michael Spranger, Sucheendra K Palaniappan and Samik Gosh. Extracting Biological Pathway Models From NLP Event Representations. In Proceedings of the 2015 Workshop on Biomedical Natural Language Processing (BioNLP 2015), pages 42-51, 2015. Association for Computational Linguistics.
-# http://ijcai.org/papers15/Papers/IJCAI15-271.pdf
-
 # to run all tests
 # ls tests/*.ann | xargs -I {} python2.7 st2sbml.py --file {}  --output {}.output-sbml.xml --complete-reactions
 
